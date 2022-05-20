@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/heroDetail.css">
+    <title>Hero Detail</title>
+</head>
+
+<body>
+    <h1><%= hero.title %></h1>
+    <form action="/hero/update" method="post">
+        <input type="text" hidden name="id" value="<%= hero.data[0].id %>" />
+        <input type="text" name="name" value="<%= hero.data[0].name %>" />
+        <input type="text" name="role" value="<%= hero.data[0].role %>" />
+        <input type="submit" value="update"
+            onclick="alert('Data sudah update! silahkan lihat data yang sudah di update di dalam list hero 😝')" />
+    </form>
+</body>
+
+</html>
