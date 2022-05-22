@@ -1,6 +1,6 @@
-const express = require('express')
+const express = require('express');
 const router = express.Router();
-const Hero = require('../model/Hero.model')
+const Hero = require('../model/Hero.model');
 
 router.get('/', (req, res) => {
     Hero.getHero(res)

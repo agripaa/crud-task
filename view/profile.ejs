@@ -5,11 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/profile.css">
     <title>Profile</title>
 </head>
 
 <body>
-    <h1><%= profile.title %></h1>
+    <div class="wrapper">
+        <h1><%= profile.title %></h1>
+        <div class="card">
+            <h4>Drop Your Image Profile Here</h4>
+            <form action="/profile" method="POST" enctype="multipart/form-data">
+                <input type="file" name="sampleFile" accept="image/*" />
+                <input type="submit" class="btn primary" />
+            </form>
+        </div>
+
+        <div class="card">
+            <% for(let i = 0; i < profile.data.length; i++){ %>
+            <% if(!profile.data[i].profile_image){ %>
+            <img class="card_Image" src="<%= profile.data[i].profile_image %> " alt="Profile User" srcset="">
+            <% } else { %>
+            <img class="card_Image" src="/assets/default.jpg" alt="" srcset="">
+            <% } %>
+            <h1 class="card_Title"><%= profile.data[i].nickname %></h1>
+            <p class="card_Description"><%= profile.data[i].description %></p>
+            <button type="button" class="btn primary"><a href="/hero/update ">Edit
+                    Profile</a></button>
+            <% } %>
+        </div>
+    </div>
 </body>
 
 </html>

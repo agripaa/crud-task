@@ -10,47 +10,49 @@
 </head>
 
 <body>
-    <h1><%= heroes.title %></h1>
-    <table>
-        <tr>
-            <th>id</th>
-            <th>nama</th>
-            <th>role</th>
-            <th>action</th>
-        </tr>
-        <% for (let i = 0; i < heroes.data.length; i++) { %>
-        <tr>
-            <td>
-                <%= i + 1 %>
-            </td>
-            <td>
-                <%= heroes.data[i].name %>
-            </td>
-            <td>
-                <%= heroes.data[i].role %>
-            </td>
-            <form action="/hero/remove" method="post">
+    <div class="listHero">
+        <h1><%= heroes.title %></h1>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Nama</th>
+                <th>Role</th>
+                <th>Action</th>
+            </tr>
+            <% for (let i = 0; i < heroes.data.length; i++) { %>
+            <tr>
                 <td>
-                    <a href="/hero/<%= heroes.data[i].id %> ">edit</a>
-                    <input type="text" hidden name="id" value="<%= heroes.data[i].id %>" />
-                    <input type="submit" value="X" style="border: none; color: red; background: none; cursor: pointer;"
-                        onclick="alert('Data yang lu maksud sudah deleted!')" />
+                    <%= i + 1 %>
                 </td>
-            </form>
-        </tr>
-        <% } %>
-    </table>
-    <br />
-    <br />
-    <br />
-    <h3>Tambahkan Hero</h3>
-    <form action="/hero/add" method="post">
-        <input type="text" name="name" placeholder="kasih nama sia disini" />
-        <input type="text" name="role" placeholder="kasih role sia disini" />
-        <br />
-        <br />
-        <input type="submit" value="tambahkan" onclick="alert('Data sudah di tambahkan di dalam list hero!')" />
-    </form>
+                <td>
+                    <%= heroes.data[i].name %>
+                </td>
+                <td>
+                    <%= heroes.data[i].role %>
+                </td>
+                <form action="/hero/remove" method="post">
+                    <td>
+                        <button><a href="/hero/<%= heroes.data[i].id %> ">edit</a></button>
+                        <input type="text" hidden name="id" value="<%= heroes.data[i].id %>" />
+                        <input type="submit" value="Delete" class="deleteButton"
+                            onclick="alert('Data yang lu maksud sudah deleted!')" />
+                    </td>
+                </form>
+            </tr>
+            <% } %>
+        </table>
+    </div>
+    <div class="formHero">
+        <h3>Tambahkan Hero</h3>
+        <form action="/hero/add" method="post">
+            <input class="form" type="text" name="name" placeholder="kasih nama sia disini" />
+            <input class="form" type="text" name="role" placeholder="kasih role sia disini" />
+            <br />
+            <br />
+            <input class="buttonSubmit" type="submit" value="tambahkan"
+                onclick="alert('Data sudah di tambahkan di dalam list hero!')" />
+        </form>
+    </div>
 </body>
 
 </html>

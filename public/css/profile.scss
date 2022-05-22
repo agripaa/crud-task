@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Noto+Serif&family=Roboto+Condensed:ital,wght@1,300&family=Roboto+Slab&family=Updock&family=Whisper&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #aaa;
+}
+
+img {width: 100%;}
+
+.wrapper{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.btn{
+    border: none;
+    color: #fff;
+    padding: 15px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-style: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.primary{background-color:blueviolet;
+} 
+
+.card{
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0), 0 6px 36px rgba(0,0,0,0.13);
+    background-color: #fff;
+
+    &_Image{
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        border-radius:50%;
+        overflow: hidden;
+        object-fit: cover;
+        box-shadow: 0 10px 20px rgba(0,0,0,0), 0 6px 36px rgba(0,0,0,0.13);
+        border: 3px solid #fff;
+    }
+
+    &_Title{margin: 0;}
+    &_Description{color: #6E8192;}
+}

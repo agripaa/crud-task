@@ -30,9 +30,17 @@
         </div>
         <div class="btn">
             <button onclick="window.location.href='/hero'">Hero</button>
-            <button onclick="window.location.href='/profile'">Profile</button>
+            <button onclick="profile()">Profile</button>
         </div>
     </div>
+    <script>
+        const profile = async () => {
+            window.location.href = '/profile';
+            await alert(
+                'Page ini masih tahap perbaikan, sebelumnya udah bisa running tapi pas di cek lagi malah gak mau keluar di UI'
+                )
+        }
+    </script>
 </body>
 
 </html>

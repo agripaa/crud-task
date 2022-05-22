@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Noto+Serif&family=Roboto+Condensed:ital,wght@1,300&family=Roboto+Slab&family=Updock&family=Whisper&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  'Noto Sans JP', sans-serif;
+}
+
+body{
+    margin:0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+table{
+    margin:0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    border: none;
+}
+
+tr th{
+    color: white;
+    background-color: rgb(27, 26, 26);
+    border: none;
+}
+
+hr{
+    width:50%;
+    margin:0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+table, th, td {
+  font-size: 15px ;
+  border-collapse: collapse;
+  padding: 10px;
+  border: none;
+}
+
+.addHero{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+    padding: 20px 0 0 0;
+}
+
+input.form{
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+
+.buttonSubmit{
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+}
+.buttonSubmit:hover{
+    cursor: pointer;
+    background: transparent;
+    color: #000;
+}
+
+button{
+    border: 1px solid rgb(44, 44, 219);
+    background-color: rgb(44, 44, 219   );
+    border-radius: 15px;
+    padding: 5px;
+    width:60px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: black;
+}
+
+button:hover{
+    cursor: pointer;
+    background: transparent;
+    color: #000;
+}
+
+.deleteButton{
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 15px;
+    padding: 5px;
+    color: white;
+    width:60px;
+}
+
+.deleteButton:hover{
+    cursor: pointer;
+    background: transparent;
+    color: #000;
+}
