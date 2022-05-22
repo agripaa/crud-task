@@ -40,6 +40,3 @@ npm install body-parser ejs express express-fileupload mysql nodemon scss
 Terimakasih kepada [youtube](https://www.youtube.com), [stackOverflow](https://stackoverflow.com/), [w3school](https://www.w3schools.com/), Random Web ,dll atas bantuannya tanpa kalian gw gak bisa apa apa dan makasih banyak buat bang [dea](https://www.youtube.com/c/DeaAfrizal) yang buat motivasi aing buat ngoding lebih joss dari sebelum sebelumnya...
 
 coderss indonesia SOLID SOLID SOLID!!
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
