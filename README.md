@@ -3,7 +3,7 @@
 Task from bang [dea](https://www.youtube.com/c/DeaAfrizal), Tugas dari salah satu course Node Js Basic dan bang dea memberi 3 tugas untuk para coders yaitu: 
 ```json
 [
-    "tugas":[
+    "task":[
         {
             "id": 1,
             "Tugas": "Memberi Alert Pada Button"
