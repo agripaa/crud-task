@@ -24,12 +24,19 @@ Task from bang [dea](https://www.youtube.com/c/DeaAfrizal), Tugas dari salah sat
 
 Module yang gw pakai dari [npm](https://www.npmjs.com/) singkatan dari (Node Package Manager) ada sebanyak 7 diantaranya:
 1.[body-parser](https://www.npmjs.com/package/body-parser)
+
 2.[ejs](https://www.npmjs.com/package/ejs)
+
 3.[express](https://www.npmjs.com/package/express)
+
 4.[express-fileupload](https://www.npmjs.com/package/express-fileupload)
+
 5.[mysql](https://www.npmjs.com/package/mysql)
+
 6.[nodemon](https://www.npmjs.com/package/nodemon)
+
 7.[scss](https://www.npmjs.com/package/scss)
+
 
 ```bash
 npm install body-parser ejs express express-fileupload mysql nodemon scss
