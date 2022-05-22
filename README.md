@@ -23,7 +23,8 @@ Task from bang [dea](https://www.youtube.com/c/DeaAfrizal), Tugas dari salah sat
 ## module
 
 Module yang gw pakai dari [npm](https://www.npmjs.com/) singkatan dari (Node Package Manager) ada sebanyak 7 diantaranya:
-1.[body-parser](https://www.npmjs.com/package/body-parser)
+
+1.[body-parser](https://www.npmjs.com/body-parser)
 
 2.[ejs](https://www.npmjs.com/package/ejs)
 
